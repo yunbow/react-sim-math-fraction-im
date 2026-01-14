@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.shapesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.shapeWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shape {
+  width: 100px;
+  height: 100px;
+}
+
+.shape.rectangle {
+  width: 200px;
+  height: 40px;
+}
+
+.shape.complete {
+  filter: drop-shadow(0 0 8px var(--color-whole));
+}
+
+.filled {
+  fill: var(--color-filled);
+  stroke: var(--color-border);
+  stroke-width: 1;
+}
+
+.empty {
+  fill: var(--color-empty);
+  stroke: var(--color-border);
+  stroke-width: 1;
+}
+
+.fractionDisplay {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-foreground);
+}
+
+.numerator,
+.denominator {
+  color: var(--color-primary);
+}
+
+.divider {
+  color: var(--color-muted-foreground);
+}
+
+.mixedDisplay {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: 0.5rem;
+}
+
+.whole {
+  color: var(--color-whole);
+  font-size: 1.75rem;
+}
+
+.mixedNumerator,
+.mixedDenominator {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+}
+
+.mixedDivider {
+  color: var(--color-muted-foreground);
+  font-size: 1.25rem;
+}
